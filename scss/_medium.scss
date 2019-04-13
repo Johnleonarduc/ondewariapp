@@ -45,11 +45,13 @@ header {
     }//end button
 }//end header
 main{
-    figure#sliding-images{
-        figcaption {
-            top: 45vw;
-            font-size: 1.3rem;
-        }
-    }
+    div#sliding-images {
+        div {
+            details {
+                top: 30vw;
+                font-size: 1.3rem;
+            }//end details
+        }//end div
+    }//end sliding images div
 
 }//end main

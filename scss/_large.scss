@@ -1,13 +1,10 @@
 main{
-    figure#sliding-images{
-            width: 96%;
-            height: 300pxpx;
-            img {
-                width: 100%;
-            }//end img
-        figcaption {
-            top: 42vw;
-            font-size: 2rem;
-        }
-    }
+    div#sliding-images {
+        div {
+            details {
+                top: 30vw;
+                font-size: 2rem;
+            }//end details
+        }//end div
+    }//end sliding images div
 }
