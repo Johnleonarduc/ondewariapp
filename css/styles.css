@@ -175,7 +175,7 @@ header {
 main {
   margin: auto auto; }
   main div#sliding-images {
-    width: 96%;
+    width: 85%;
     margin: auto auto; }
     main div#sliding-images div img {
       width: 100%; }
@@ -183,13 +183,12 @@ main {
       display: block;
       box-sizing: border-box;
       position: absolute;
-      top: 25vw;
+      top: 32vw;
       padding-left: 10px;
       background: rgba(241, 94, 94, 0.164);
       color: white;
-      font-size: .7rem;
-      font-family: 'Times New Roman', Times, serif;
-      height: 20px; }
+      font-size: .5rem;
+      font-family: 'Times New Roman', Times, serif; }
       main div#sliding-images div details button {
         display: inline-block;
         position: relative;
@@ -240,11 +239,13 @@ footer {
       display: none; }
 
   main div#sliding-images div details {
-    top: 30vw;
-    font-size: 1.3rem; } }
+    top: 35vw;
+    font-size: 1rem; } }
 @media only screen and (min-width: 1140px) {
   main div#sliding-images div details {
-    top: 30vw;
-    font-size: 2rem; } }
+    top: 35vw;
+    font-size: 1.5rem; }
+  main div#sliding-images div button {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=styles.css.map */
