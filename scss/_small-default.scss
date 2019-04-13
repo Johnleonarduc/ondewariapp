@@ -1,0 +1,139 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*********** HEADER STYLES **********/
+body{
+    width: 100%;
+    background-color: $secondaryColor;
+}//end body
+
+header {
+    background-color: $primaryColor;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    width: 100%;
+
+    button{
+        background-image: url(../images/navIcon/menuIconBlack.png);
+        background-repeat: no-repeat;
+        width: 10%;
+        height: 35px;
+        background-color: white;
+        background-position: center center;
+        border: 1px solid black;
+        margin: 20px 0 5px $gutter;
+    }//end button
+
+    figure#logo{
+        margin-left: $gutter;
+        margin-top: 5px;
+        width: 35%;
+        padding-top: 0;
+        height: 50px;
+        #logo {
+            padding-left: 75px;
+        }//end logo
+
+    }//end figure
+
+    #search-box {
+        margin-top: 20px;
+        width: 5%;
+        padding-left: 5px;
+    }//end search box
+
+    figure#userID {
+        display: inline-block;
+        width: 50%;
+        img#passport {
+            float: right;
+            margin: 20px $gutter 0 10px;
+        }//end img
+        #role {
+            text-align: right;
+            margin-top: 10px;
+            padding: 10px 10px 0 0;
+            font-size: .9em;
+            color: white;
+            text-decoration: underline;
+        }//end role of userID
+        #username {
+            text-align: right;
+            margin-top: 5px;
+            font-size: .7em;
+            padding: 0 10px 10px 0;
+            color: white;
+        }//end username of userID
+    }//end figure#userID
+
+    nav{
+        background-color: $tertiaryColor;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        margin-top: 60px;
+        z-index: 1;
+    
+        ul li{
+            display: inherit;
+            margin-right: 10px;
+        }//end ul li
+    
+        ul li a{
+            display: inherit;
+            text-align: left;
+            margin-left: $gutter;
+            text-decoration: none;
+            padding: .5rem 2%;
+            color: white;
+            border-bottom: solid 1px white;
+        }//end ul li a
+    
+        ul li.active a{
+            background-color: #0093dd;
+        }//end ul li.active a
+        ul.closed {
+            display: none;
+        }//end ul.closed
+    }//end nav
+}//end header
+
+
+
+/*********** MAIN STYLES **********/
+main{
+    figure#sliding-images {
+        width: 96%;
+        margin-left: $gutter;
+        img {
+            width: 100%;
+        }//end img
+        figcaption {
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            top: 48vw;
+            padding: $gutter;
+            background: rgba(241, 94, 94, 0.164);
+            color: white;
+            font-size: 1rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }//end figure
+}//end main
+
+
+/*********** FOOTER STYLES **********/
+footer {
+    background-color: $tertiaryColor;}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

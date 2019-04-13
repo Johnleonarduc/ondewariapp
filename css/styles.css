@@ -1,0 +1,245 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*********** HEADER STYLES **********/
+body {
+  width: 100%;
+  background-color: #29166f; }
+
+header {
+  background-color: #d8352c;
+  display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+  width: 100%; }
+  header button {
+    background-image: url(../images/navIcon/menuIconBlack.png);
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 35px;
+    background-color: white;
+    background-position: center center;
+    border: 1px solid black;
+    margin: 20px 0 5px 2%; }
+  header figure#logo {
+    margin-left: 2%;
+    margin-top: 5px;
+    width: 35%;
+    padding-top: 0;
+    height: 50px; }
+    header figure#logo #logo {
+      padding-left: 75px; }
+  header #search-box {
+    margin-top: 20px;
+    width: 5%;
+    padding-left: 5px; }
+  header figure#userID {
+    display: inline-block;
+    width: 50%; }
+    header figure#userID img#passport {
+      float: right;
+      margin: 20px 2% 0 10px; }
+    header figure#userID #role {
+      text-align: right;
+      margin-top: 10px;
+      padding: 10px 10px 0 0;
+      font-size: .9em;
+      color: white;
+      text-decoration: underline; }
+    header figure#userID #username {
+      text-align: right;
+      margin-top: 5px;
+      font-size: .7em;
+      padding: 0 10px 10px 0;
+      color: white; }
+  header nav {
+    background-color: #1f1a17;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 60px;
+    z-index: 1; }
+    header nav ul li {
+      display: inherit;
+      margin-right: 10px; }
+    header nav ul li a {
+      display: inherit;
+      text-align: left;
+      margin-left: 2%;
+      text-decoration: none;
+      padding: .5rem 2%;
+      color: white;
+      border-bottom: solid 1px white; }
+    header nav ul li.active a {
+      background-color: #0093dd; }
+    header nav ul.closed {
+      display: none; }
+
+/*********** MAIN STYLES **********/
+main figure#sliding-images {
+  width: 96%;
+  margin-left: 2%; }
+  main figure#sliding-images img {
+    width: 100%; }
+  main figure#sliding-images figcaption {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 48vw;
+    padding: 2%;
+    background: rgba(241, 94, 94, 0.164);
+    color: white;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif; }
+
+/*********** FOOTER STYLES **********/
+footer {
+  background-color: #1f1a17; }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 560px) {
+  /*HEADER*/
+  header {
+    width: 100%; }
+    header figure#logo {
+      width: 15%; }
+    header nav {
+      position: relative;
+      width: 60%;
+      margin: 25px 0 0 2px;
+      background-color: transparent; }
+      header nav ul li {
+        color: white;
+        float: left; }
+      header nav ul li a {
+        border: none;
+        border-right: 1px solid white;
+        padding-top: 7px;
+        padding-left: 5px;
+        padding-inline-end: 10px;
+        height: 30px; }
+        header nav ul li a:hover {
+          background-color: #29166f;
+          color: white; }
+      header nav ul.closed {
+        display: inline-block; }
+    header figure#userID {
+      width: 20%; }
+    header button {
+      display: none; }
+
+  main figure#sliding-images figcaption {
+    top: 45vw;
+    font-size: 1.3rem; } }
+@media only screen and (min-width: 1140px) {
+  main figure#sliding-images {
+    width: 96%;
+    height: 300pxpx; }
+    main figure#sliding-images img {
+      width: 100%; }
+    main figure#sliding-images figcaption {
+      top: 42vw;
+      font-size: 2rem; } }
+
+/*# sourceMappingURL=styles.css.map */

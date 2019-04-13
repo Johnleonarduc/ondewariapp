@@ -1,0 +1,55 @@
+/*HEADER*/
+header {
+    width: 100%;
+
+    figure#logo{
+        width: 15%;
+        }//end logo
+
+    nav{
+        position: relative;
+        width: 60%;
+        margin: 25px 0 0 2px;
+        background-color: transparent;
+
+        ul li{
+            color: white;
+            float: left;
+        }//end ul li
+
+        ul li a{
+            border: none;
+            border-right: 1px solid white;
+            padding-top: 7px;
+            padding-left: 5px;
+            padding-inline-end: 10px;
+            height: 30px;
+            &:hover {
+                background-color: $secondaryColor;
+                color: white;
+            }
+        }//end ul li a
+
+        ul.closed {
+            display: inline-block;
+        }//end ul.closed
+
+    }//end nav
+
+    figure#userID {
+        width: 20%;
+    }//end figure#userID
+
+    button{
+        display: none;
+    }//end button
+}//end header
+main{
+    figure#sliding-images{
+        figcaption {
+            top: 45vw;
+            font-size: 1.3rem;
+        }
+    }
+
+}//end main
