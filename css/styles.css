@@ -181,7 +181,7 @@ main figure#sliding-images {
     display: block;
     box-sizing: border-box;
     position: absolute;
-    top: 48vw;
+    top: 46vw;
     padding: 2%;
     background: rgba(241, 94, 94, 0.164);
     color: white;
