@@ -100,7 +100,8 @@ html {
 /*********** HEADER STYLES **********/
 body {
   width: 100%;
-  background-color: #29166f; }
+  background-color: #29166f;
+  font-family: Arial, Helvetica, sans-serif; }
 
 header {
   background-color: #d8352c;
@@ -108,30 +109,24 @@ header {
   flex-wrap: wrap;
   height: 60px;
   width: 100%; }
-  header button {
-    background-image: url(../images/navIcon/menuIconBlack.png);
-    background-repeat: no-repeat;
-    width: 10%;
-    height: 35px;
-    background-color: white;
-    background-position: center center;
-    border: 1px solid black;
-    margin: 20px 0 5px 2%; }
+  header div {
+    font-size: 2.3em;
+    width: 15%;
+    padding-left: 2%; }
+    header div .fa-bars {
+      color: #ddd;
+      margin: 15px auto 0 auto; }
   header figure#logo {
     margin-left: 2%;
     margin-top: 5px;
-    width: 35%;
+    width: 40%;
     padding-top: 0;
     height: 50px; }
     header figure#logo #logo {
       padding-left: 75px; }
-  header #search-box {
-    margin-top: 20px;
-    width: 5%;
-    padding-left: 5px; }
   header figure#userID {
     display: inline-block;
-    width: 50%; }
+    width: 40%; }
     header figure#userID img#passport {
       float: right;
       margin: 20px 2% 0 10px; }
@@ -149,11 +144,12 @@ header {
       padding: 0 10px 10px 0;
       color: white; }
   header nav {
-    background-color: #1f1a17;
+    background-color: rgba(14, 13, 13, 0.808);
     position: absolute;
     top: 0;
     width: 100%;
-    margin-top: 60px; }
+    margin-top: 60px;
+    z-index: 1; }
     header nav ul li {
       display: inherit;
       margin-right: 10px; }
@@ -171,17 +167,28 @@ header {
       display: none; }
 
 /*********** MAIN STYLES **********/
-main figure#sliding-images {
-  width: 96%;
-  margin-left: 2%; }
-  main figure#sliding-images img {
-    width: 100%; }
-  main figure#sliding-images details {
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    top: 15vw;
-    left: 20px; }
+main {
+  margin: auto auto; }
+  main .search-box-top {
+    margin-top: 0;
+    width: 100%;
+    height: 40px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-left: 7px; }
+    main .search-box-top input[type=text] {
+      width: 80%;
+      font-size: 17px; }
+    main .search-box-top button {
+      width: 15%;
+      font-size: 17px; }
+  main div#sliding-images {
+    width: 96%;
+    margin: auto auto; }
+    main div#sliding-images div img {
+      width: 100%; }
 
 /*********** FOOTER STYLES **********/
 footer {
@@ -222,6 +229,14 @@ footer {
     header figure#userID {
       width: 20%; }
     header button {
-      display: none; } }
+      display: none; }
+
+  main div#sliding-images div details {
+    top: 30vw;
+    font-size: 1.3rem; } }
+@media only screen and (min-width: 1140px) {
+  main div#sliding-images div details {
+    top: 30vw;
+    font-size: 2rem; } }
 
 /*# sourceMappingURL=styles.css.map */
