@@ -120,8 +120,11 @@ header {
     padding-left: 2%; }
     header div .fa-bars, header div .fa-times {
       color: white;
-      margin: 15px auto 0 auto;
-      transition: left 5s ease-in-out 5s; }
+      margin: 15px auto 0 auto;}
+.fa-times {
+color: black;
+margin: 15px auto 0 auto;
+transition: 2s all;}
   header figure#logo {
     z-index: inherit;
     margin-left: 2%;
