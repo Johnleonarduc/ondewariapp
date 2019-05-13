@@ -124,7 +124,7 @@ header {
 header div .fa-times  {
 color: black;
 margin: 15px auto 0 auto;
-transition: 2s all;}
+transition: 1s all;}
   header figure#logo {
     z-index: inherit;
     margin-left: 2%;
