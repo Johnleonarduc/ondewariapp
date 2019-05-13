@@ -118,10 +118,10 @@ header {
     font-size: 2.3em;
     width: 15%;
     padding-left: 2%; }
-    header div .fa-bars, header div .fa-times {
+    header div .fa-bars {
       color: white;
       margin: 15px auto 0 auto;}
-.fa-times {
+header div .fa-times  {
 color: black;
 margin: 15px auto 0 auto;
 transition: 2s all;}
