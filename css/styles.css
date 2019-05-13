@@ -228,7 +228,7 @@ main {
       width: 100%; }
   main .button {
     position: absolute;
-    top: 68vw;
+    top: 64vw;
     right: 5%;
     background-color: white;
     border-style: solid;
@@ -378,14 +378,14 @@ footer {
       display: none; }
 
   main .button {
-    top: 64vw; } }
+    top: 62vw; } }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 550px) and (max-width: 1023px) {
   /*HEADER*/
   header {
     width: 100%; }
@@ -434,7 +434,7 @@ footer {
       width: 100%; }
   main .button {
     position: absolute;
-    top: 43vw;
+    top: 40vw;
     right: 35%;
     background-color: white;
     border-style: solid;
