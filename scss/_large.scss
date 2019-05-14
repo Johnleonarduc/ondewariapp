@@ -1,9 +1,12 @@
 header {
     width: 100%;
-
+    figure#logo{
+        width: 10%;
+    }
     nav{
-        width: 65%;
+        width: 70%;
         ul li{
+            float: left;
             font-size: 1rem;
         }//end ul li
     }//end nav
@@ -24,6 +27,30 @@ header {
     }//end button
 }//end header
 main{
+    .search-box-top {
+        position: absolute;
+        top: 12px;
+        width: 35%;
+        right: 12%;
+        height: 35px;
+        background-color: rgba(255, 255, 255, 0.486);
+        padding-top: 0;
+        padding-bottom: 0;
+        input[type=text]{
+            margin-top: 3px;
+            border-radius: 10px;
+            width: 87%;
+            font-size: 20px;
+        }//end inputtext
+        .fa-search {
+            margin-top: 3px;
+            width: 10%;
+            font-size: 25px;
+            margin-left: 5px;
+            float: right;
+            color: #0093dd;
+        }//end search container button    
+    }//end search box
     div#sliding-images {
         width: 75%;
 
@@ -48,3 +75,11 @@ main{
         }
     }//end asset description
 }//end main
+
+@media only screen and (min-width: 1175px) {
+    main{
+        .search-box-top {
+            width: 40%;
+        }
+    }
+}

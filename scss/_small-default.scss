@@ -27,11 +27,21 @@ header {
         font-size: 2.3em;
         width: 15%;
         padding-left: $gutter;
-        .fa-bars, .fa-times{
+        .fa-bars {
             color: $secondaryColor;
             margin: 15px auto 0 auto;
-            transition: left 5s ease-in-out 5s;
+            -webkit-transition: 0.5s all;
+            -o-transition: 0.5s color;
+            transition: 0.5s color;
         }//end fa-bars
+        .fa-times{
+            color: $tertiaryColor;
+            margin: 15px auto 0 auto;
+            -webkit-transition: 0.5s color;
+            -moz-transition: 0.5s color;
+            -o-transition: 0.5s color;
+            transition: 0.5s color;
+        }
     }//end div
 
     figure#logo{
@@ -153,10 +163,12 @@ main{
     }//end zoom images
     .text-over-image{
         position: absolute;
-        z-index: 0;
-        top: 0px;
-        color: $secondaryColor;
-        background-color: $primaryColor;
+        z-index: 5;
+        top: 120px;
+        font-weight: bolder;
+        color: $tertiaryColor;
+        background-color: rgba(255, 255, 255, 0.452);
+        border-radius: 10px;
         padding: 5px;
     }//end text-over-image
     div#sliding-images {

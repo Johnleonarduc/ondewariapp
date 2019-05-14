@@ -120,11 +120,17 @@ header {
     padding-left: 2%; }
     header div .fa-bars {
       color: white;
-      margin: 15px auto 0 auto;}
-header div .fa-times  {
-color: black;
-margin: 15px auto 0 auto;
-transition: 1s all;}
+      margin: 15px auto 0 auto;
+      -webkit-transition: 0.5s all;
+      -o-transition: 0.5s color;
+      transition: 0.5s color; }
+    header div .fa-times {
+      color: #1f1a17;
+      margin: 15px auto 0 auto;
+      -webkit-transition: 0.5s color;
+      -moz-transition: 0.5s color;
+      -o-transition: 0.5s color;
+      transition: 0.5s color; }
   header figure#logo {
     z-index: inherit;
     margin-left: 2%;
@@ -218,10 +224,12 @@ main {
     display: none; }
   main .text-over-image {
     position: absolute;
-    z-index: 0;
-    top: 0px;
-    color: white;
-    background-color: #d8352c;
+    z-index: 5;
+    top: 120px;
+    font-weight: bolder;
+    color: #1f1a17;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 10px;
     padding: 5px; }
   main div#sliding-images {
     width: 100%;
@@ -231,7 +239,7 @@ main {
       width: 100%; }
   main .button {
     position: absolute;
-    top: 64vw;
+    top: 68vw;
     right: 5%;
     background-color: white;
     border-style: solid;
@@ -381,14 +389,14 @@ footer {
       display: none; }
 
   main .button {
-    top: 62vw; } }
+    top: 64vw; } }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-@media only screen and (min-width: 550px) and (max-width: 1023px) {
+@media only screen and (min-width: 550px) {
   /*HEADER*/
   header {
     width: 100%; }
@@ -437,7 +445,7 @@ footer {
       width: 100%; }
   main .button {
     position: absolute;
-    top: 40vw;
+    top: 43vw;
     right: 35%;
     background-color: white;
     border-style: solid;
@@ -481,9 +489,12 @@ footer {
 @media only screen and (min-width: 1024px) {
   header {
     width: 100%; }
+    header figure#logo {
+      width: 10%; }
     header nav {
-      width: 65%; }
+      width: 70%; }
       header nav ul li {
+        float: left;
         font-size: 1rem; }
     header figure#userID {
       width: 15%; }
@@ -494,6 +505,27 @@ footer {
     header #navicon {
       display: none; }
 
+  main .search-box-top {
+    position: absolute;
+    top: 12px;
+    width: 35%;
+    right: 12%;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.486);
+    padding-top: 0;
+    padding-bottom: 0; }
+    main .search-box-top input[type=text] {
+      margin-top: 3px;
+      border-radius: 10px;
+      width: 87%;
+      font-size: 20px; }
+    main .search-box-top .fa-search {
+      margin-top: 3px;
+      width: 10%;
+      font-size: 25px;
+      margin-left: 5px;
+      float: right;
+      color: #0093dd; }
   main div#sliding-images {
     width: 75%; }
     main div#sliding-images div img {
@@ -508,5 +540,8 @@ footer {
       line-height: 2rem; }
       main .asset-description .description-list li .fa-check {
         color: #0093dd; } }
+@media only screen and (min-width: 1024px) and (min-width: 1175px) {
+  main .search-box-top {
+    width: 40%; } }
 
 /*# sourceMappingURL=styles.css.map */
