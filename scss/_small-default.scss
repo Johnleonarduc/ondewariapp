@@ -114,6 +114,9 @@ header {
         ul.closed {
             display: none;
         }//end ul.closed
+        ul.open {
+            display: block;
+        }//end ul.open
     }//end nav
 }//end header
 

@@ -185,6 +185,8 @@ header {
       background-color: #0093dd; }
     header nav ul.closed {
       display: none; }
+    header nav ul.open {
+      display: block; }
 
 /*********** MAIN STYLES **********/
 main {
